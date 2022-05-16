@@ -2,11 +2,10 @@ const mysql = require("mysql2");
 
 // 创建连接池
 const connections = mysql.createPool({
-  host: "localhost",
+  host: "", // 服务器地址
   user: "root",
   database: "cms",
-  // password: "c13005261761F",
-  password: "c18688062638f",
+  password: "",
 });
 
 // 测试是否连接成功
